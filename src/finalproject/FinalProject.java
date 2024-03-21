@@ -92,6 +92,7 @@ public class FinalProject {
 
         glMatrixMode(GL_MODELVIEW);
         glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST); // anti aliasing 
+        glEnable(GL_DEPTH_TEST); // make more cube like
     }
     
     private void render() {
