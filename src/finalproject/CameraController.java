@@ -14,7 +14,7 @@ public class CameraController {
     
     // Store the camera's position
     private Vector3f position = null;
-    private Vector3f lPosition = null;
+//    private Vector3f lPosition = null;
     
     private float yaw = 0f; // Rotation around the y-axis
     private float pitch = 0f; // Rotation around the x-axis
@@ -26,10 +26,10 @@ public class CameraController {
     public CameraController(float x, float y, float z, float sensitivity, float speed) {
         this.position = new Vector3f(x, y, z);
         
-        this.lPosition = new Vector3f(x, y, z);
-        this.lPosition.x = 0f;
-        this.lPosition.y = 0f;
-        this.lPosition.z = 0f;
+//        this.lPosition = new Vector3f(x, y, z);
+//        this.lPosition.x = 0f;
+//        this.lPosition.y = 15f;
+//        this.lPosition.z = 0f;
         
         this.mouseSensitivity = sensitivity;
         this.movementSpeed = speed;

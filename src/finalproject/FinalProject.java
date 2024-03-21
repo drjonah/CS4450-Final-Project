@@ -15,7 +15,7 @@ import org.lwjgl.util.glu.GLU;
 public class FinalProject {
     
     // Camera
-    private CameraController camera = new CameraController(0, 15, 0, 0.09f, 0.35f);
+    final private CameraController camera = new CameraController(0, -15, 0, 0.09f, 0.35f);
     private DisplayMode displayMode;
     
     public String title;
@@ -96,7 +96,7 @@ public class FinalProject {
     
     private void render() {
         
-        Cube cube = new Cube(0, -5, 10, 10);  // Create the cube
+        Cube cube = new Cube(0, 0, -50, 10);  // Create the cube
     
         while (!Display.isCloseRequested() && !Keyboard.isKeyDown(Keyboard.KEY_ESCAPE)) {
             glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
